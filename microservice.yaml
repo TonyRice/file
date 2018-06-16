@@ -7,13 +7,13 @@ commands:
             content:
                 type: any
                 required: true
-        output:
-            type: any
     read:
         arguments:
             path:
                 type: string
                 required: true
+            type:
+                type: string
         output:
             type: any
     exists:
