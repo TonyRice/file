@@ -1,0 +1,25 @@
+commands:
+    write:
+        arguments:
+            path:
+                type: string
+                required: true
+            content:
+                type: any
+                required: true
+        output:
+            type: any
+    read:
+        arguments:
+            path:
+                type: string
+                required: true
+        output:
+            type: any
+    exists:
+        arguments:
+            path:
+                type: string
+                required: true
+        output:
+            type: boolean
