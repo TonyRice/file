@@ -12,8 +12,11 @@ commands:
             path:
                 type: string
                 required: true
-            type:
-                type: string
+	    type:
+		type: string
+            raw:
+		type: boolean
+		required: false
         output:
             type: any
     exists:
@@ -23,3 +26,8 @@ commands:
                 required: true
         output:
             type: boolean
+    mkdir:
+        arguments:
+            path:
+               type: string
+               required: true
