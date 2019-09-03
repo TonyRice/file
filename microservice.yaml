@@ -7,14 +7,19 @@ commands:
             content:
                 type: any
                 required: true
+            binary:
+                type: boolean
+                required: false
+            encoding:
+                type: boolean
+                required: false
+
     read:
         arguments:
             path:
                 type: string
                 required: true
-            type:
-                type: string
-            raw:
+            binary:
                 type: boolean
                 required: false
         output:
@@ -26,8 +31,33 @@ commands:
                 required: true
         output:
             type: boolean
+    isDir:
+        arguments:
+            path:
+                type: string
+                required: true
+        output:
+            type: boolean
+
+    isFile:
+        arguments:
+            path:
+                type: string
+                required: true
+        output:
+            type: boolean
     mkdir:
         arguments:
             path:
                type: string
                required: true
+    list:
+        arguments:
+            path:
+                type: string
+                required: false
+            recursive:
+                type: boolean
+                required: false
+        output:
+            type: list
