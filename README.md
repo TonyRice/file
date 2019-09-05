@@ -25,7 +25,7 @@ str = file read path:"/tmp/foo" binary: false
 # Read and write raw bytes
 http server as client
   when client listen method:"post" path:"/" as r
-    # the file service receives the zipe file,
+    # the file service receives the zip file,
     # and we write it to the filesystem using raw
     # bytes.
     if r.file and r.file["body"]
